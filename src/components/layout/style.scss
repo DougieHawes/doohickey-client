@@ -1,0 +1,41 @@
+@import "../../display/style/style.scss";
+
+.header {
+  border-bottom-width: 2px;
+  margin-bottom: 2px;
+  max-height: 85px;
+  min-height: 85px;
+  overflow: hidden;
+  .header-title-container {
+    .header-title-link {
+      display: flex;
+      margin-left: 0;
+      max-width: 300px;
+      overflow: hidden;
+      .header-title-logo {
+        margin-left: -14px;
+        width: 70px;
+      }
+      .header-title {
+        font-size: 42px;
+        margin-left: -80px;
+        margin-top: 3px;
+      }
+    }
+  }
+  .header-navbar {
+    margin-left: 0;
+    margin-top: -14px;
+    max-width: 600px;
+  }
+}
+
+.mode-toggle {
+  cursor: pointer;
+  position: absolute;
+  right: 2%;
+  top: 6px;
+  .mode-toggle-image {
+    width: 42px;
+  }
+}
