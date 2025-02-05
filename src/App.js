@@ -8,7 +8,10 @@ import Home from "./components/routes/public/Home";
 import Contact from "./components/routes/public/Contact";
 import Product from "./components/routes/public/Product";
 import Products from "./components/routes/public/Products";
-import SignIn from "./components/routes/public/SignIn";
+
+import SignIn from "./components/routes/auth/SignIn";
+
+import Dashboard from "./components/routes/private/Dashboard";
 
 import "./display/style/style.scss";
 
@@ -24,7 +27,11 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/products/:productid" element={<Product />} />
         <Route path="/products" element={<Products />} />
-        <Route path={process.env.REACT_APP_SIGNIN_URL} element={<SignIn />} />
+        <Route
+          path={`/${process.env.REACT_APP_SIGNIN_URL}`}
+          element={<SignIn />}
+        />
+        <Route path={"/dashboard"} element={<Dashboard />} />
       </Routes>
     </div>
   );
