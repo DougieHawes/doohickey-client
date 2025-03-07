@@ -11,7 +11,7 @@ const Home = () => {
 
   useEffect(() => {
     const getBackendMessage = async () => {
-      const message = await axios.get("http://localhost:5000/");
+      const message = await axios.get(`${process.env.REACT_APP_SERVER_URL}`);
 
       setBackendMessage(message.data.msg);
     };
