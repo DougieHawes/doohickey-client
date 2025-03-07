@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
-import logo from "../../display/media/images/icons/logo.png";
+import darkModeLogo from "../../display/media/images/icons/darkModeLogo.png";
+import lightModeLogo from "../../display/media/images/icons/lightModeLogo.png";
 
 import ModeToggle from "./ModeToggle";
 
@@ -13,7 +14,11 @@ const Header = ({ darkmode, onClick }) => {
     <header className="header">
       <div className="header-title-container">
         <Link className="header-title-link" to="/">
-          <img className="header-title-logo" src={logo} alt="" />
+          <img
+            className="header-title-logo"
+            src={darkmode ? darkModeLogo : lightModeLogo}
+            alt=""
+          />
           <h1 className="header-title">Doohickey</h1>
         </Link>
       </div>

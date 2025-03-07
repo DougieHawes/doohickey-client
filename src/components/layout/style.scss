@@ -9,17 +9,16 @@
   .header-title-container {
     .header-title-link {
       display: flex;
+      justify-content: space-between;
       margin-left: 0;
-      max-width: 300px;
-      overflow: hidden;
+      width: 270px;
       .header-title-logo {
-        margin-left: -14px;
-        width: 70px;
+        height: 50px;
+        margin: 10px 0;
       }
       .header-title {
-        font-size: 42px;
-        margin-left: -80px;
-        margin-top: 3px;
+        font-size: 50px;
+        margin-top: 10px;
       }
     }
   }
